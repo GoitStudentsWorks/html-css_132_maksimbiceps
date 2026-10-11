@@ -114,3 +114,8 @@ img {
   padding: 10px 24px;
   text-align: center;
 }
+/* Smooth scroll */
+
+html {
+  scroll-behavior: smooth;
+}
