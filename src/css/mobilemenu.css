@@ -1,4 +1,3 @@
-
 .mobile-menu {
   position: fixed;
   inset: 0;
@@ -6,11 +5,18 @@
   background-color: var(--color-bg);
   padding: 24px 20px;
   display: flex;
-flex-direction: column;
+  flex-direction: column;
   overflow-y: auto;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.mobile-menu__actions {
+  display: flex;
+  gap: 16px;
+  margin-left: auto;
+  align-items: center;
 }
 
 .mobile-menu.is-open {
@@ -23,23 +29,23 @@ flex-direction: column;
 .mobile-menu__header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .mobile-menu__close {
   display: block;
- border: none;
+  border: none;
   background: transparent;
   cursor: pointer;
+  padding: 12px;
 }
 
 .mobile-menu__list {
   display: flex;
   flex-direction: column;
   /* Remove default list spacing and markers */
-margin: 0;
-padding: 0;
-list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   gap: 16px;
 }
 
@@ -52,12 +58,13 @@ list-style: none;
 /* Mobile menu registration button styles */
 .mobile-menu__register {
   font-size: 16px;
-line-height: 1.5;
+  line-height: 1.5;
   background-color: var(--color-accent);
   color: var(--color-text);
   padding: 8px 20px;
   border-radius: var(--radius);
   text-decoration: none;
+  margin-left: auto;
 }
 /* Hide mobile menu on tablets and desktops */
 @media screen and (min-width: 768px) {
@@ -68,10 +75,6 @@ line-height: 1.5;
 
 .mobile-menu__nav {
   /* Center navigation on the screen */
-  display: flex;
-  justify-content: center;
- flex: 1;
-align-items: center;
+  text-align: center;
+  margin-top: 16px;
 }
-
-
