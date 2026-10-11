@@ -61,8 +61,9 @@
   line-height: 1.5;
   background-color: var(--color-accent);
   color: var(--color-text);
+  font-weight: 500;
   padding: 8px 20px;
-  border-radius: var(--radius);
+  border-radius: 100px;
   text-decoration: none;
   margin-left: auto;
 }
