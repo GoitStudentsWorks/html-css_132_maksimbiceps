@@ -101,17 +101,30 @@ img {
 
 /* Помаранчева кнопка */
 .btn--primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--color-accent);
+  border: 1px solid var(--color-accent);
   border-radius: 100px;
-  padding: 10px 24px;
+  padding: 9px 23px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
   text-align: center;
 }
 
 /* З бордером */
 .btn--secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--color-border);
   border-radius: 100px;
-  padding: 10px 24px;
+  padding: 9px 23px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
   text-align: center;
 }
 /* Smooth scroll */
