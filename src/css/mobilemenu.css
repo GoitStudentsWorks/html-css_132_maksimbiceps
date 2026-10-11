@@ -19,7 +19,7 @@ flex-direction: column;
   pointer-events: auto;
 }
 
-/* Верхняя часть меню: Register и крестик */
+/* Menu header: Register and close button */
 .mobile-menu__header {
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@ flex-direction: column;
 .mobile-menu__list {
   display: flex;
   flex-direction: column;
-  /* Убираем стандартные отступы и маркеры списка */
+  /* Remove default list spacing and markers */
 margin: 0;
 padding: 0;
 list-style: none;
@@ -49,7 +49,7 @@ list-style: none;
   color: var(--color-text);
   text-decoration: none;
 }
-/* Оформление кнопки регистрации в мобильном меню */
+/* Mobile menu registration button styles */
 .mobile-menu__register {
   font-size: 16px;
 line-height: 1.5;
@@ -59,7 +59,7 @@ line-height: 1.5;
   border-radius: var(--radius);
   text-decoration: none;
 }
-/* Скрываем мобильное меню на планшетах и компьютерах */
+/* Hide mobile menu on tablets and desktops */
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -67,7 +67,7 @@ line-height: 1.5;
 }
 
 .mobile-menu__nav {
-  /* Размещаем навигацию по центру экрана */
+  /* Center navigation on the screen */
   display: flex;
   justify-content: center;
  flex: 1;
