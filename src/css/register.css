@@ -1,0 +1,213 @@
+.register {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.register__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.register__content {
+  width: 100%;
+  max-width: 335px;
+}
+
+/* Заголовок секції */
+.register__title {
+  font-family: 'Caveat', cursive, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.01em;
+  color: var(--color-scheme-1-text, #000000);
+  margin: 0 0 24px;
+}
+
+/* Форма */
+.register__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.register__field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Назви полів */
+.register__label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+/* Інпути та текстове поле */
+.register__input,
+.register__textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.register__input {
+  height: 40px;
+}
+
+.register__textarea {
+  height: 180px;
+  padding: 12px;
+  resize: none;
+}
+
+/* Плейсхолдери */
+.register__input::placeholder,
+.register__textarea::placeholder {
+  border-color: var(--color-carissma, #000000);
+}
+
+/* фокус */
+.register__input:focus,
+.register__textarea:focus {
+  border-color: var(--color-carissma, #000000);
+}
+
+/* Кнопка Register */
+.register__btn {
+  width: 100%;
+  max-width: 340px;
+  height: 44px;
+  padding: 10px 24px;
+  border-radius: 100px;
+  background-color: #ffb780;
+  border: 1px solid #ffb780;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  transition:
+    opacity 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.register__btn:hover,
+.register__btn:focus {
+  opacity: 0.88;
+}
+
+/* Картинка */
+.register__thumb {
+  width: 100%;
+  max-width: 335px;
+  height: 286px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.register__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .register {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .register__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .register__content {
+    width: 100%;
+    max-width: 704px;
+  }
+
+  .register__thumb {
+    width: 100%;
+    max-width: 704px;
+    height: 362px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .register__btn {
+    width: 340px;
+  }
+
+  .register__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .register {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .register__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .register__content {
+    width: 640px;
+    max-width: 640px;
+    flex-shrink: 0;
+  }
+
+  .register__thumb {
+    width: 640px;
+    max-width: 640px;
+    height: 734px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .register__btn {
+    width: 304px;
+  }
+
+  .register__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    display: block;
+  }
+}
