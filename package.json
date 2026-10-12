@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/group5-wildsketch/",
+    "build": "vite build --base=/html-css_132_maksimbiceps/",
     "preview": "vite preview"
   },
   "devDependencies": {
